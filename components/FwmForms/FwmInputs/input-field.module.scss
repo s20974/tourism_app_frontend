@@ -1,0 +1,69 @@
+.textField {
+    width: 100%;
+    margin-bottom: 25px !important;
+
+    &.error {
+        margin-bottom: 5px !important;
+    }
+    
+    :global {
+        .MuiFormLabel-root {
+            transition: .3s linear;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: #1E9992;
+            transform: translate(10px, 14px) scale(1);
+
+            &.MuiInputLabel-shrink {
+                transform: translate(10px, 14px) scale(1);
+                opacity: 0;
+                color: #1E9992;
+            }
+        }
+
+        .MuiInputBase-root {
+            border: 1px solid #1E9992;
+
+            &.Mui-error {
+                border: 1px solid red;
+            }
+
+            &.Mui-focused {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                border: 1px solid #086165;
+            }
+        }
+
+        .MuiOutlinedInput-input {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: #1E9992 !important;
+        }
+
+        .MuiInputAdornment-root {
+            i { 
+                color: #1E9992;
+            }
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            display: none;
+        }
+
+        .MuiOutlinedInput-input {
+            padding: 0;
+            padding-left: 10px;
+            height: 40px;
+        }
+
+        .MuiFormHelperText-root {
+            margin-left: 0;
+            font-size: 10px;
+            color: red;
+        }
+    }
+}

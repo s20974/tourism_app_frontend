@@ -1,0 +1,52 @@
+.datePickerWrapper {
+    :global {
+        .MuiFormControl-root {
+            .MuiFormLabel-root {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: #1E9992;
+            }
+
+            .MuiInputBase-root {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: #1E9992;  
+                border-bottom: 1px solid #1E9992; 
+                
+                &.Mui-error {
+                    border-bottom: 1px solid red;
+                }
+            }
+
+            .MuiInputAdornment-root {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: #1E9992;   
+                .MuiButtonBase-root {
+                    color: #1E9992;   
+                }
+            }
+
+            .MuiInput-underline {
+                &.Mui-focused {
+                    &:after {
+                        border-bottom: none;
+                    }
+                }
+
+                &:hover {
+                    &:not(.Mui-disabled) {
+                        &:before {
+                            border-bottom: 1px solid #1E9992;
+                        }
+                    }
+                }
+                transform: none;
+                
+            }
+        }
+    }
+}

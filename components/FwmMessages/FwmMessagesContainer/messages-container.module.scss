@@ -1,0 +1,48 @@
+.messagesContainerWrapper {
+    width: 100%;
+    height: 100%;
+
+    .messageContainer {
+        padding-top: 70px;
+        padding-left: 50px;
+        width: 95%;
+        height: 70vh;
+        border-bottom: 1px solid silver;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .messagesButtonsWrapper {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+
+        form {
+            display: flex;
+            width: 100%;
+        }
+
+        .inputWrapper {
+            width: 88%;
+            float: left;
+        }
+
+        .sendButton {
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #1E9992;
+            float: right;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            button {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

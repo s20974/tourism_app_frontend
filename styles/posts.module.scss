@@ -1,0 +1,18 @@
+.postsContainerWrapper {
+    width: 93%;
+    float: right;
+    height: 98vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    p {
+        margin-top: 10px;
+        font-size: 30px;
+        font-family: "Jeko_Bold";
+    }
+
+    .postsContainerWrapper {
+        width: 100%;
+        height: auto;
+    }
+}

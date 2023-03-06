@@ -1,0 +1,205 @@
+.topLeftMenuWrapper {
+    width: 550px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    border-radius: 0 0 0 40px;
+    -webkit-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+    box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+
+    .infoBlockWrapper {
+        width: 450px;
+        height: 100%;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .locationWrapper {
+            width: 50%;
+            height: 100%;
+            border-right: 1px solid black;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .location {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                font-size: 30px;
+
+                p {
+                    font-size: 20px;
+                    font-family: "Jeko_Bold";
+                }
+
+                i {
+                    &:after {
+                        float: right;
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        .buttonsWrapper {
+            width: 50%;
+            height: auto;
+
+            display: flex;
+            justify-content: center;
+
+            .button {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 20px;
+
+                margin-left: 20px;
+
+                cursor: pointer;
+
+                transition: .2s;
+
+                &:hover {
+                    background-color: silver;
+                }
+            }
+
+            .profile {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 100%;
+                margin-left: 20px;
+
+                background-image: url('../../styles/images/backgrounds/blank-profile.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.userButtonsWrapper {
+    margin-bottom: 20px;
+    width: 100%;
+    float: right;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+
+    .userButtonsList {
+        width: 600px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+            width: 100px;
+            text-align: center;
+            overflow: hidden;
+
+            p {
+                display: block;
+                font-size: 20px;
+                font-family: "Jeko_Bold";
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+            }
+
+            .bottomLine {
+                width: 100%;
+                height: 2px;
+                background-color: black;
+
+                transform: translateX(-100px);
+                transition: .2s;
+
+                &.active {
+                    transform: translateX(0) !important;
+                }
+            }
+
+            &:hover {
+                .bottomLine {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+.formWrapper {
+    width: 100%;
+    height: 500px;
+}
+
+.select {
+    width: 100%;
+    margin-bottom: 20px;
+
+    :global {
+        .MuiFormControl-root {
+            width: 100%;
+            .MuiFormLabel-root {
+                opacity: 1;
+                color: #189894;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                transform: translate(10px, 16px) scale(1) !important;
+                &.Mui-focused{
+                    opacity: 0;
+                }
+                &.MuiFormLabel-filled {
+                    opacity: 0;
+                }
+            }
+
+            label + .MuiInput-formControl {
+                margin-top: 0;
+            }
+
+            .MuiInputBase-root {
+                .MuiSelect-root {
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 400;
+                    border: 1px solid #189894;
+                    color: #189894;
+                    padding-left: 10px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-radius: 5px;
+                }
+
+                .MuiSvgIcon-root {
+                    color: #189894;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.homeContainer {
+    width: 93%;
+    float: right;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    p {
+        margin-top: 10px;
+        font-size: 30px;
+        font-family: "Jeko_Bold";
+    }
+
+    .dataContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        border-top: 1px solid black;
+
+        p {
+            font-size: 24px;
+        }
+
+        .listWrapper {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

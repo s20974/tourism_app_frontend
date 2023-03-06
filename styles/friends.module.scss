@@ -1,0 +1,221 @@
+.friendsContainerWrapper {
+    width: 93%;
+    float: right;
+    height: 98vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    p {
+        margin-top: 10px;
+        font-size: 30px;
+        font-family: "Jeko_Bold";
+    }
+
+    .friendBlocks {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        .icons {
+            width: 100px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .filterIcon {
+                width: 40px;
+                height: 40px;
+                -webkit-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, .5);
+                -moz-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, .5);
+                box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, .5);
+                border-radius: 10px;
+                float: right;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                cursor: pointer;
+
+                i {
+                    color: black;
+                    font-size: 20px;
+                } 
+            }
+        }
+    }
+
+    .friendsListWrapper {
+        width: 96%;
+        margin-top: 10px;
+        border-top: 1px solid #189894;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        .friendsList {
+            width: 1000px;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        
+            &::after {
+                content: '';
+                width: 300px;
+            }
+        }
+    }
+
+    .filtersContainerWrapper {
+        height: 0px;
+        overflow: hidden;
+        width: 60%;
+        transition: .3s;
+        border-radius: 15px;
+        -webkit-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+        box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+
+        text-align: center;
+        
+        &.active {
+            transition: .3s;
+            height: 370px;
+        }
+    }
+
+    .filtersContainer {
+        width: 100%;
+        height: 0px;
+       
+        overflow: hidden;
+        transition: .3s;
+
+        &.active {
+            transition: .3s;
+            height: 300px;
+        }
+
+        display: flex;
+        justify-content: space-around;
+
+        .filterBlock {
+            width: 200px;
+            height: 0px;
+            opacity: 0;
+            transition: .6s;
+            text-align: left;
+
+            i {
+                color: white;
+            }
+
+            :global {
+                .MuiFormGroup-root {
+                    .MuiTypography-root {
+                        color: #189894;
+                        font-family: 'Nunito', sans-serif !important;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+
+                    .MuiCheckbox-root {
+                        color: #189894;
+
+                        &.Mui-checked {
+                            color: #189894;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                opacity: 1;
+                height: 200px;
+            }
+
+            p {
+                color: #189894;
+                font-family: 'Jeko_Bold';
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.firendCard {
+    width: 30%;
+    height: 410px;
+    -webkit-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+    box-shadow: -4px 5px 33px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .friendAvatar {
+        width: 100%;
+        height: 290px;
+        border-radius: 10px;
+        background-image: url('../styles/images/backgrounds/blank-profile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .userName {
+        width: 100%;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        p {
+            font-size: 18px !important;
+        }
+    }
+
+    .userPosistion {
+        width: 100%;
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        color: #189894;
+        p {
+            font-size: 16px !important;
+        }
+
+        i {
+            &:after {
+                float: right;
+                content: '';
+                display: block;
+                width: 5px;
+                height: 10px;
+            }
+        }
+    }
+
+    .userButtons {
+        padding: 0 10px 0 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        color: #189894;
+    }
+}
+
+.showMore {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}

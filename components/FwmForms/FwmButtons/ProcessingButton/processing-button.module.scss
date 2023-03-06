@@ -1,0 +1,42 @@
+.processingButton {
+    max-width: 600px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #189894 0%, #DFB567 50%, #DADCCA 100%) !important;
+
+    :global {
+        .MuiButton-label {
+            font-family: "Jeko_Bold";
+            font-size: 18px;
+            color: white;
+        }
+    }
+
+    .loadingIcon {
+        i {
+            margin-right: 10px;
+            display: block;
+            transform: rotate(-45deg);
+            animation: planeLoadin 2s infinite linear;
+        }
+    }
+
+}
+
+@keyframes planeLoadin {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    33% {
+        transform: rotate(-65deg);
+    }
+
+    66% {
+        transform: rotate(-25deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
+    }
+}

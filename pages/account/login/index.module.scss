@@ -1,0 +1,96 @@
+.loginConatinerWrapper {
+    width: 100%;
+    height: 100vh;
+    background: -webkit-radial-gradient(top right, rgba(36, 1, 68, 1) 0%, rgba(105, 149, 151, 1) 51%, rgba(210, 236, 240, 1) 100%);
+    background: radial-gradient(at top right, rgba(36, 1, 68, 1) 0%, rgba(105, 149, 151, 1) 51%, rgba(210, 236, 240, 1) 100%);
+    animation: colorChange 8s infinite alternate linear;
+}
+
+.loginFormWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginForm {
+        width: 410px;
+        height: 100%;
+        padding-top: 30px;
+
+        .loginText {
+            p {
+                font-family: "Jeko_Bold";
+                font-size: 50px;
+                margin: 0;
+                padding: 0;
+                line-height: 45px;
+
+                background: #189894;
+                background: linear-gradient(to right, #189894 0%, #DFB567 50%, #086165 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &::first-letter {
+                    font-size: 60px;
+                }
+            }
+
+            span {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #1E9992;
+            }
+
+            a {
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                color: #309B8F;
+                text-decoration: none;
+            }
+        }
+
+        .logInFields {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .processButton {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .brandsProcessingButtons {
+            width: 100%;
+            height: auto;
+            margin-top: 87px;
+        }
+    }
+}
+
+@keyframes colorChange {
+    from {
+        background-position: left top;
+        background-size: 150% 100%;
+    }
+
+    49.9% {
+        background-position: left top;
+    }
+
+    50% {
+        background-size: 100% 100%;
+    }
+
+    50.1% {
+        background-position: right top;
+    }
+
+    to {
+        background-position: right top;
+        background-size: 200% 100%;
+    }
+}

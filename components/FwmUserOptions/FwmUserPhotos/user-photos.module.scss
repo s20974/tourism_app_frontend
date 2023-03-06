@@ -1,0 +1,270 @@
+.userPhotosWrapper {
+    width: 96%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+
+    .userPhotosList {
+        width: 1050px;
+        height: auto;
+
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    
+        &::after {
+            content: '';
+            width: 300px;
+        }
+    
+        .withoutPhoto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            font-size: 25px;
+            font-family: "Jeko_Bold";
+    
+            margin-top: 100px;
+    
+            width: 100%;
+    
+            i {
+                margin-bottom: 10px;
+                font-size: 10rem;
+                opacity: 0.7;
+                z-index: 0;
+            }
+        }
+    
+        .photo {
+            width: 30%;
+            height: 400px;
+            border-radius: 14px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 4px 60px -28px rgba(0, 0, 0, 0.25);
+            margin-bottom: 3vh;
+        }
+    
+        .photoInfo {
+            width: 100%;
+            height: 100%;
+            border-radius: 14px;
+            opacity: 0;
+            background-color: #002C45;
+            position: relative;
+            transition: 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+    
+            &:hover {
+                opacity: 0.7;
+            }
+    
+            .bottomIcons {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0px;
+                position: absolute;
+                bottom: 1.5vh;
+                left: 0;
+            }
+    
+            i {
+                display: block;
+                color: white;
+                font-size: 25px;
+                margin-bottom: 0.5vh;
+            }
+    
+            .iconInfo {
+                width: 5vw;
+                text-align: center;
+                font-family: 'Jeko_Bold';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1vw;
+                color: white;
+    
+                &:hover {
+                    i {
+                        -webkit-animation: swing 1s ease;
+                        animation: swing 1s ease;
+                        -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.photoModalWrapper {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+    .userProfilePhoto {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .likeButton {
+            background-color: #1E9992;
+            padding-top: 10px;
+            border-top-left-radius: 10px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-family: 'Jeko_Bold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .photoCommentsLikes {
+        width: 49%;
+        height: 100%;
+        overflow: hidden;
+
+        .photoData {
+            height: 10%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            p {
+                font-family: 'Jeko_Bold';
+                font-style: normal;
+                font-weight: 400;
+                padding: 0;
+                margin: 0;
+                cursor: pointer;
+            }
+        }
+
+        .photoCommentsBlock {
+            width: 100%;
+            height: 75%;
+            padding: 15px;
+            overflow: auto;
+            -webkit-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+            -moz-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+            box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+        }
+
+        .sendCommentSetLikeContainer {
+            width: 100%;
+            height: 10%;
+            padding-top: 15px;
+
+            .inputWrapper {
+                width: 88%;
+                float: left;
+            }
+
+            .sendButton {
+                width: 40px;
+                height: 40px;
+                background-color: #1E9992;
+                float: right;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                button {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.commentWrapper {
+    max-width: 60%;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 79px 9px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+
+    .name {
+        font-family: 'Jeko_Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+
+        font-family: 'Jeko_Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}

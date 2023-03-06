@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Jeko_Bold";
+    src: url('fonts/Jeko Extra Bold.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: "Jeko_Medium";
+    src: url('fonts/Jeko Medium.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: "Jeko_Light";
+    src: url('fonts/Jeko Light.ttf') format("truetype")
+}
+
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body {
+    margin: 0 auto;
+}
+
+// a {
+//     text-decoration: none;
+// }

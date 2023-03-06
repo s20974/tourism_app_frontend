@@ -1,0 +1,37 @@
+.notificationMessage {
+    :global {
+        .MuiSnackbar-root {
+            top: 10px;
+            bottom: 0;
+            width: 400px;
+            align-items: flex-start;
+
+            .MuiPaper-root {
+                background-color: rgb(252, 198, 198);
+                .MuiAlert-message {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    
+                    p {
+                        padding-left: 10px;
+                        color: rgb(95, 33, 32);
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 700;
+                        max-width: 250px;
+                        overflow: hidden;
+                        text-overflow: clip ellipsis;
+                        white-space: nowrap;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    .userNameTypography {
+        font-family: 'Jeko_Bold' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+    }
+}

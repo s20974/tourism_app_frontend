@@ -1,0 +1,316 @@
+.userPostsWrapper {
+    width: 96%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+
+    .userPostsList {
+        width: 1050px;
+        height: auto;
+
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .withoutPost {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            color: black;
+            font-size: 25px;
+            font-family: "Jeko_Bold";
+    
+            margin-top: 100px;
+    
+            width: 100%;
+    
+            i {
+                margin-bottom: 10px;
+                font-size: 10rem;
+                opacity: 0.7;
+                z-index: 0;
+            }
+        }
+
+        .userPostWrapper {
+            width: 500px;
+            height: 250px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                .likesCommentInfo {
+                    transform: translateX(0px) !important;
+                    opacity: 1 !important;
+                }
+
+                .backgroundImage {
+                    filter: brightness(43%) blur(12px);
+                    -webkit-filter: brightness(43%) blur(12px);
+                    -moz-filter: brightness(43%) blur(12px);
+                }
+            }
+            
+            .userPostInfo {
+                width: 475px;
+                height: 100%;
+                border-radius: 15px;
+                position: relative;
+                top: 0;
+                left: 0;
+
+                padding: 10px;
+
+                z-index: 2;
+
+                .header {
+                    width: 100%;
+                    height: auto;
+
+                    p {
+                        font-family: "Jeko_Bold";
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+
+                .description {
+                    width: 100%;
+                    height: 150px;
+                    p {
+                        font-family: "Jeko_Bold";
+                        font-size: 15px;
+                        color: white;
+                    }
+                }
+
+                .likesCommentInfo {
+                    width: 200px;
+                    height: 75px;
+                    float: right;
+
+                    display: flex;
+                    justify-content: center;
+
+                    transition: .3s;
+                    opacity: 0;
+                    transform: translateY(100px);
+
+                    .iconInfo {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50px;
+                        text-align: center;
+                        font-family: 'Jeko_Bold';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1vw;
+                        color: white;
+                        cursor: pointer;
+
+                        &:hover {
+                            i {
+                                -webkit-animation: swing 1s ease;
+                                animation: swing 1s ease;
+                                -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .backgroundImage {
+                transition: .3s;
+                margin-top: -270px;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                background-image: url('../../../styles/images/backgrounds/header.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.imageHeaderWrapper {
+    width: 107%;
+    height: 300px;
+    margin-left: -30px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    .likeButton {
+        background-color: #1E9992;
+        padding-top: 10px;
+        border-top-left-radius: 10px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Jeko_Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        i {
+            cursor: pointer;
+        }
+    }
+}
+
+.postDataInfo {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+
+    .headerWrapper {
+        p {
+            font-family: 'Jeko_Bold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+        }
+    }
+
+    .descriptionWrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        p {
+            font-family: 'Jeko_Bold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    .commentsBlockWrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 10px;
+
+        .commentContaner {
+            padding: 15px;
+            overflow: auto;
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            -webkit-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+            -moz-box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+            box-shadow: inset 0px 0px 22px 0px rgba(66, 68, 90, 1);
+        }
+    }
+
+    .addCommentLikeBlock {
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+
+        .inputWrapper {
+            width: 88%;
+            float: left;
+        }
+
+        .sendButton {
+            width: 40px;
+            height: 40px;
+            background-color: #1E9992;
+            float: right;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            button {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+}
+
+.commentWrapper {
+    max-width: 60%;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 79px 9px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+
+    .name {
+        font-family: 'Jeko_Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+
+        font-family: 'Jeko_Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}

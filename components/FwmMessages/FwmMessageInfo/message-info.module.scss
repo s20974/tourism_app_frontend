@@ -1,0 +1,98 @@
+.messageWrapper {
+    max-width: 600px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    .messageAvatar {
+        width: 70px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        :global {
+            .MuiAvatar-root {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    .messageInfo {
+        width: 100%;
+        max-width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .messageHeader {
+            margin-bottom: 5px;
+
+            p {
+                font-size: 20px;
+                font-family: "Jeko_Bold";
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                height: 30px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        .messageTextWrapper {
+            margin-bottom: 8px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .messageText {
+                width: 60%;
+
+                // text-overflow: ellipsis;
+                p {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .messageTime {
+                width: 30%;
+
+                p {
+                    font-size: 12px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                font-family: "Jeko_Bold";
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                height: 20px;
+            }
+        }
+
+        .messageTime {
+            p {
+                font-size: 15px;
+                font-family: "Jeko_Bold";
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                height: 20px;
+                text-align: right;
+            }
+        }
+    }
+}

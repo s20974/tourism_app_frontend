@@ -1,0 +1,100 @@
+.processingBlockWrapper {
+    width: 1200px;
+    height: 545px;
+    overflow: hidden;
+
+    border-radius: 40px;
+    background-color: white;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .processingBlock {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        .leftSideImage {
+            width: 50%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            background-image: url('../../../../styles/images/backgrounds/sign-up-background-image.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: backgroundPosirion 60s infinite alternate linear;
+
+            .logoWrapper {
+                position: relative;
+                top: 20px;
+                left: 20px;
+                width: 240px;
+                height: 75px;
+                z-index: 100;
+                display: flex;
+
+                .logoImage {
+                    width: 40px;
+                    height: 100%;
+                    padding-top: 5px;
+                }
+
+                .logoText {
+                    width: 200px;
+                    height: 100%;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                        font-family: "Jeko_Bold";
+                        font-size: 30px;
+                        color: white;
+                    }
+
+                    span {
+                        color: white;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            &:before {
+                width: 50%;
+                position: absolute;
+                content: '';
+                background: inherit;
+                height: 120%;
+                width: 120%;
+                left: -25px;
+                right: 0;
+                top: -25px;
+                bottom: 0;
+                box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+                filter: blur(2px);
+                border-radius: 15px;
+            }
+        }
+
+        .rightInputsContainer {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+@keyframes backgroundPosirion {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 150%;
+    }
+}

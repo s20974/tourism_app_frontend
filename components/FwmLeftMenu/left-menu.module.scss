@@ -1,0 +1,136 @@
+.leftMenuWrapper {
+    width: 90px;
+    height: 99.8vh;
+    overflow: hidden;
+    transition: .2s;
+    box-shadow: 2px 16px 37px 1px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 100 !important;
+    background-color: white;
+
+    p {
+        transition: .2s;
+    }
+
+    &.open {
+        width: 250px;
+        p {
+            opacity: 1 !important;
+        }
+    }
+
+    .leftMenu {
+        position: relative;
+        height: 100%;
+        width: 250px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .iconWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buttonWrapper {
+            width: 150px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            position: relative;
+            transition: .2s;
+            
+            img {
+                transition: .2s;
+                margin-right: 10px;
+            }
+
+            p {
+                font-family: "Jeko_Bold";
+                font-size: 20px;
+                color: #2C9F99;
+                transition: .2s;
+                opacity: 0;
+            }
+
+            &.open {
+                margin-bottom: 90px;
+                img {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+                p {
+                    font-size: 25px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .menuButtonsWrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        .buttonButtonWrapper {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 60px;
+
+            .menuButton {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                color: #2C9F99;
+                cursor: pointer;
+
+                .circleIcon {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    border: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                    float: left;
+                    margin-right: 10px;
+
+                    &.angle {
+                        i {
+                            transform: rotate(180deg);
+                            transition: .2s;
+                        }
+
+                        &.open {
+                            i {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    font-family: "Jeko_Bold";
+                    font-size: 20px;
+                    color: #2C9F99;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
